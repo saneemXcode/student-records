@@ -1,0 +1,275 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.heading{
+  background-image: -webkit-linear-gradient(360deg, #59a9ff 0%, #7ff362 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-style: italic;
+  
+}
+
+body{
+  background-color: #e3edf7;
+  background-color: #e3edf7;
+  display: block; /* remove flex so table width won't shift form */
+  margin: 0;
+}
+
+ .form {
+  position: relative;
+  width: 380px;
+  padding: 50px;
+  margin: 0 auto 40px auto; /* keeps it centered */
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  background: #e3edf7;
+}
+.form .input-box 
+{
+position: relative;
+display: flex;
+ width: 350px;
+  margin: 10px auto 5px auto;
+}
+
+
+.form .input-box input{
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+
+.btn{
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  background: transparent;
+  font-weight: 600;
+ border: none;
+ color: #313131;
+}
+.btn:focus{
+  box-shadow: inset 0px 5px rgba(0,0,0,0.1), inset -5px -5px 10px #fff;
+  
+
+}
+
+
+.input-box input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  padding: 0 5px;
+}
+.sbtn input {
+  width: 220px;            /* fixed width so it doesn't expand */
+  height: 20px;
+  font-size: 14px;
+  color: #414040;
+  border: 1px solid gray;
+  background-color: transparent;
+  box-shadow: -6px -6px 8px rgba(255,255,255,0.9),
+              5px 5px 8px rgba(198,189,189,0.25);
+  padding: 8px 12px;
+  border-radius: 14px;
+}
+
+.sbtn input::placeholder {
+  color: black;
+}
+
+.sbtn input::placeholder {
+    color: black;
+}
+
+
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+
+
+.input-box input:focus + label,
+.input-box label.active {
+  top: -10px;
+  font-size: 13px;
+  color: #000;
+}
+
+
+
+.input-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+}
+
+
+
+.input-box input:focus ~ .input-line {
+  background: #000;
+}
+
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 2px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+
+.button {
+  padding: 15px 18px;
+  height: 100%;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.button:hover {
+  background: #333;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+
+.success-msg{
+color:green;
+margin:10px 0;
+}
+
+.error-text{
+color:red;
+font-size:13px;
+margin:3px 0 10px;
+}
+
+.empty-msg{
+margin-top:30px;
+color:#666;
+}
+
+.total-students{
+margin:20px 0;
+font-weight:500;
+font-size: 19px;
+}
+.table-controls {
+  width: 75%;              /* same width as table */
+  margin: 20px auto;       /* center like table */
+  display: flex;
+  justify-content: space-between;  /* push left & right */
+  align-items: center;
+  gap: 10px;
+}
+.table {
+  border-collapse: collapse;
+  width: 75%;
+  margin: 40px auto; /* center table separately */
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+.table th,td{
+  padding: 12px 15px;
+  font-size: 18px;
+
+}
+.table tbody tr{
+  border-bottom: 1px solid #dddddd;
+  font-size: 17px;
+}
+.table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+
+.but1{
+
+  padding: 10px 18px;
+  margin-inline: 10px;
+	box-shadow: 0px 20px 24px 3px rgba(5, 85, 92, 0.2);
+  cursor: pointer;
+	/* margin-top: 35px; */
+}
+
+.but1:hover {
+	box-shadow: 0px 5px 15px 3px rgba(5, 85, 92, 0.2);
+}
+
+button.button{
+	background-color: #05555c;
+	color: #f6f9fe;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	font-size: 15px;
+	padding: 10px 18px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+button.but1 {
+	background-color: #05555c;
+	color: #f6f9fe;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	font-size: 14px;
+	padding: 10px 18px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+
+button.button:hover,button.but1:hover{
+	background-color: #f6f9fe;
+	color: #05555c;
+	border: 1px solid #05555c;
+}
