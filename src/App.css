@@ -274,30 +274,3 @@ button.button:hover,button.but1:hover{
 	border: 1px solid #05555c;
 }
 
-@media (max-width: 900px) {
-
-  .table {
-    width: 95%;
-    font-size: 12px;
-  }
-
-  .table th,
-  .table td {
-    padding: 6px;
-  }
-
-  .but1 {
-    padding: 4px 8px;
-    font-size: 11px;
-  }
-
-  .table-controls input {
-    width: 150px;
-    font-size: 12px;
-  }
-
-  .button {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
-}
